@@ -127,8 +127,8 @@ ADD config/.gitignore $HOME/.gitignore
 # Add drush global configuration file
 ADD config/drushrc.php $HOME/.drush/drushrc.php
 
-# Add ocp status script @TODO: fetch correct script, this is just a dummy
-RUN mkdir /opt/ocp && echo '<?php phpinfo(); ?>' > /opt/ocp/ocp.php
+# Add ocp status script
+RUN mkdir /opt/ocp && wget -O /opt/ocp/ocp.php https://gist.githubusercontent.com/ck-on/4959032/raw
 
 # Add zsh configuration
 ADD config/.zshrc $HOME/.zshrc
