@@ -11,7 +11,7 @@ The container shares ports 80, 3306 and 9000 with the host, for browsing, access
 * Supervisor, to control multiple services running inside the container
 * OpenSSH client
 * SSMTP, a lightweight smtp MTA
-* Apache 2.4, MySQL 5.5 & PHP 5.4
+* Apache 2.4, MySQL 5.5 & PHP 5.5
 * OPcache PHP builtin opcode cache
 * MemCached service and php extension
 * Xdebug php extension
