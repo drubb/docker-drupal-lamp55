@@ -110,6 +110,7 @@ RUN php5enmod php
 
 # Add additional mysql configuration file
 ADD config/mysql.cnf /etc/mysql/conf.d/mysql.cnf
+RUN chmod 0664 /etc/mysql/conf.d/mysql.cnf
 
 # Add memcached configuration file
 ADD config/memcached.conf /etc/memcached.conf
@@ -119,6 +120,7 @@ ADD config/ssmtp.conf /etc/ssmtp/ssmtp.conf
 
 # Add phpmyadmin configuration file
 ADD config/config.inc.php /opt/phpmyadmin/config.inc.php
+RUN chmod 0664 /opt/phpmyadmin/config.inc.php
 
 # Add git global configuration files
 ADD config/.gitconfig $HOME/.gitconfig
