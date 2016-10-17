@@ -62,9 +62,9 @@ RUN apt-get -yqq install git
 # Install composer (latest version)
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 
-# Install drush (dev version, for drupal 8)
+# Install drush and drupal console (latest stables)
 USER docker
-RUN composer global require drush/drush:dev-master
+RUN composer global require "drush/drush:8.*" "drupal/console"
 USER root
 
 # Install PhpMyAdmin (latest version)
