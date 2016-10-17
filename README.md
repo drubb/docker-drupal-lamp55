@@ -19,7 +19,8 @@ The container shares ports 80, 3306 and 9000 with the host, for browsing, access
 * PEAR and PECL package managers
 * Composer (latest version)
 * Git (latest version)
-* Drush (dev version, for drupal 8)
+* Drush (latest stable)
+* Drupal Console (latest stable)
 * ZSH / Oh-My-ZSH
 * PROST drupal deployment scripts, see https://www.drupal.org/sandbox/axroth/1668300
 * Several command line tools like mc, htop, curl, wget, patch, vim
